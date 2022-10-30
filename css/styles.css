@@ -47,6 +47,14 @@ img {
     /* outline-offset: -2px; */
 }
 
+.section-portfolio,
+.section-team,
+.section-feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 /* logo header/footer */
 
 .logo {
@@ -63,6 +71,10 @@ img {
 }
 
 /* navigation */
+
+.main-nav {
+    border-bottom: 1px solid #F5F5F5;
+}
 
 .main-nav {
     display: flex;
@@ -204,17 +216,14 @@ img {
     justify-content: space-between;
 }
 
-.plus.list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
-
 /* activity */
 
 .activity {
     display: flex;
     justify-content: space-between;
+}
+
+.section-activity {
     padding-bottom: 94px;
 }
 
@@ -224,21 +233,13 @@ img {
     background-color: var(--background-gray);
 }
 
-.team-list{
-    padding-bottom: 94px;
-}
-
-.team-list .list{
+.section-team .list{
     display: flex;
     justify-content: space-between;
 }
 
 .team-items {
     text-align: center;
-}
-
-.team .section-title {
-    padding-top: 94px;
 }
 
 .team-name {
@@ -288,15 +289,8 @@ img {
     margin-right: 8px;
 }
 
+
 /* portfolio galery */
-
-.portfolio-btn.list {
-    padding-top: 94px;
-}
-
-.galery.list {
-    padding-bottom: 94px;
-}
 
 .galery {
     display: flex;
@@ -319,14 +313,22 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text);
-    margin-bottom: 50px;
-
+    margin-bottom: 20px;
 }
 
 .portfolio-item,
 .item-text {
     margin-left: 24px;
     margin-right: 24px;
+}
+
+.galery-item {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+}
+
+.galery-item:nth-child(n+7){
+    margin-bottom: 0;
 }
 
 /* footer */
